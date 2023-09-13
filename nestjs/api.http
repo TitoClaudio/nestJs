@@ -1,0 +1,13 @@
+GET http://localhost:3000/routes
+
+## Create a route
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+  "name": "rota teste",
+  "source_id": "11111", 
+  "destination_id": "11111"
+}
+
+
