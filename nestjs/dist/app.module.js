@@ -12,12 +12,19 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const routes_module_1 = require("./routes/routes.module");
 const prisma_module_1 = require("./prisma/prisma.module");
+const config_1 = require("@nestjs/config");
+const maps_module_1 = require("./maps/maps.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [routes_module_1.RoutesModule, prisma_module_1.PrismaModule],
+        imports: [
+            config_1.ConfigModule.forRoot({ isGlobal: true }),
+            routes_module_1.RoutesModule,
+            prisma_module_1.PrismaModule,
+            maps_module_1.MapsModule,
+        ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })

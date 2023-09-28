@@ -21,23 +21,23 @@ let RoutesService = class RoutesService {
             data: {
                 name: createRouteDto.name,
                 source: {
-                    name: 'nome origem',
+                    name: "nome origem",
                     location: {
                         lat: 0,
                         lng: 0,
-                    }
+                    },
                 },
                 destination: {
-                    name: 'nome destino',
+                    name: "nome destino",
                     location: {
                         lat: 0,
                         lng: 0,
-                    }
+                    },
                 },
                 distance: 0,
                 duration: 0,
-                directions: '{}',
-            }
+                directions: "{}",
+            },
         });
     }
     findAll() {

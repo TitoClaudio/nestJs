@@ -1,6 +1,6 @@
-import { CreateRouteDto } from './dto/create-route.dto';
-import { UpdateRouteDto } from './dto/update-route.dto';
-import { PrismaService } from 'src/prisma/prisma/prisma.service';
+import { CreateRouteDto } from "./dto/create-route.dto";
+import { UpdateRouteDto } from "./dto/update-route.dto";
+import { PrismaService } from "src/prisma/prisma/prisma.service";
 export declare class RoutesService {
     private prismaService;
     constructor(prismaService: PrismaService);

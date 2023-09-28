@@ -10,11 +10,13 @@ exports.RoutesModule = void 0;
 const common_1 = require("@nestjs/common");
 const routes_service_1 = require("./routes.service");
 const routes_controller_1 = require("./routes.controller");
+const maps_module_1 = require("../maps/maps.module");
 let RoutesModule = class RoutesModule {
 };
 exports.RoutesModule = RoutesModule;
 exports.RoutesModule = RoutesModule = __decorate([
     (0, common_1.Module)({
+        imports: [maps_module_1.MapsModule],
         controllers: [routes_controller_1.RoutesController],
         providers: [routes_service_1.RoutesService],
     })

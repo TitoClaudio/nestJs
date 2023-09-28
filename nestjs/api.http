@@ -1,4 +1,4 @@
-GET http://localhost:3000/routes
+GET http://localhost:3000/places?text=guaratuba, pr
 
 ## Create a route
 POST http://localhost:3000/routes
@@ -10,4 +10,9 @@ Content-Type: application/json
   "destination_id": "11111"
 }
 
+###
+GET http://localhost:3000/places?text=manaus, am
+
+###
+GET http://localhost:3000/directions?originId=ChIJt0d2s8gbbJIRzKll959cSCs&destinationId=OyKP625QRcyrMGqegO1I
 
